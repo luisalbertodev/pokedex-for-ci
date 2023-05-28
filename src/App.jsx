@@ -13,6 +13,8 @@ const mapResults = ({ results }) =>
 		id: parseInt(url.match(/\/(\d+)\//)[1]),
 	}));
 
+const TEST = "test";
+
 const App = () => {
 	const {
 		data: pokemonList,
@@ -25,8 +27,6 @@ const App = () => {
 	if (error) {
 		return <ErrorMessage error={error} />;
 	}
-
-	console.log("Test");
 
 	return (
 		<Router>
